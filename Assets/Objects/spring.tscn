@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://bckhmwekiwxqx"]
 
-[ext_resource type="Script" path="res://Assets/Objects/spring.gd" id="1_dw7mi"]
+[ext_resource type="Script" uid="uid://d05soeuspwpu5" path="res://Assets/Objects/spring.gd" id="1_dw7mi"]
 [ext_resource type="Texture2D" uid="uid://drrvkgnmeia48" path="res://Assets/Objects/Textures/spring-sheet.png" id="2_6k00a"]
 
 [sub_resource type="Animation" id="Animation_om0o7"]
@@ -35,8 +35,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_lmfhn"]
 _data = {
-"RESET": SubResource("Animation_om0o7"),
-"Spring": SubResource("Animation_bt8d0")
+&"RESET": SubResource("Animation_om0o7"),
+&"Spring": SubResource("Animation_bt8d0")
 }
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_il0ee"]

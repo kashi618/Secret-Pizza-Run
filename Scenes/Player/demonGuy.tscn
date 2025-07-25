@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://diknajp1nsj2y"]
 
-[ext_resource type="Script" path="res://Scenes/Player/old_guy.gd" id="1_nnwkg"]
+[ext_resource type="Script" uid="uid://bwii517oowas7" path="res://Scenes/Player/old_guy.gd" id="1_nnwkg"]
 [ext_resource type="Texture2D" uid="uid://lrogcfpd3tdu" path="res://Assets/Characters/Old dude/demonDude-Sheet.png" id="2_06dv7"]
 
 [sub_resource type="Animation" id="Animation_c78pc"]
@@ -38,8 +38,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_to114"]
 _data = {
-"RESET": SubResource("Animation_c78pc"),
-"idle": SubResource("Animation_o14sg")
+&"RESET": SubResource("Animation_c78pc"),
+&"idle": SubResource("Animation_o14sg")
 }
 
 [node name="OldGuy" type="CharacterBody2D"]

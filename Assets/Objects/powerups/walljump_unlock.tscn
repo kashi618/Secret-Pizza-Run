@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://c1flpcle71wsc"]
 
-[ext_resource type="Script" path="res://Assets/Objects/powerups/walljump_unlock.gd" id="1_biih6"]
+[ext_resource type="Script" uid="uid://bmvqudt48ueij" path="res://Assets/Objects/powerups/walljump_unlock.gd" id="1_biih6"]
 [ext_resource type="Theme" uid="uid://cjjnne5ktjnxi" path="res://Scenes/UI/UI Assets/UI.tres" id="2_30e2u"]
 [ext_resource type="Texture2D" uid="uid://cghe453wvgmi4" path="res://Assets/Objects/powerups/images/wallJump powerupbig.png" id="3_xskit"]
 [ext_resource type="Material" uid="uid://6xew18640bs1" path="res://Assets/Objects/powerups/explosion.tres" id="4_w5i2a"]
@@ -87,8 +87,8 @@ tracks/2/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_f2wcm"]
 _data = {
-"RESET": SubResource("Animation_p35io"),
-"reveal": SubResource("Animation_r884s")
+&"RESET": SubResource("Animation_p35io"),
+&"reveal": SubResource("Animation_r884s")
 }
 
 [node name="PowerupUnlock" type="Control"]
@@ -169,12 +169,12 @@ modulate = Color(0, 1, 0.976471, 1)
 rotation = -1.5708
 emitting = false
 amount = 20
-process_material = ExtResource("4_w5i2a")
 lifetime = 2.0
 one_shot = true
 explosiveness = 0.8
 trail_enabled = true
 trail_lifetime = 0.1
+process_material = ExtResource("4_w5i2a")
 
 [node name="MarginContainer5" type="MarginContainer" parent="CanvasLayer"]
 anchors_preset = 2
@@ -195,11 +195,11 @@ modulate = Color(0, 1, 0.976471, 1)
 rotation = -0.785398
 emitting = false
 amount = 20
-process_material = ExtResource("4_w5i2a")
 one_shot = true
 explosiveness = 0.8
 trail_enabled = true
 trail_lifetime = 0.1
+process_material = ExtResource("4_w5i2a")
 
 [node name="MarginContainer6" type="MarginContainer" parent="CanvasLayer"]
 anchors_preset = 3
@@ -223,15 +223,15 @@ modulate = Color(0, 1, 0.976471, 1)
 rotation = -2.48482
 emitting = false
 amount = 20
-process_material = ExtResource("4_w5i2a")
 one_shot = true
 explosiveness = 0.8
 trail_enabled = true
 trail_lifetime = 0.1
+process_material = ExtResource("4_w5i2a")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_f2wcm")
+&"": SubResource("AnimationLibrary_f2wcm")
 }
 
 [node name="Timer" type="Timer" parent="."]

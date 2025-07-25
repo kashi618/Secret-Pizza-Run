@@ -1,13 +1,13 @@
 [gd_scene load_steps=47 format=3 uid="uid://bqetxd6a5mong"]
 
-[ext_resource type="Script" path="res://Code/Player/player.gd" id="1_qmyvb"]
+[ext_resource type="Script" uid="uid://dmdgyud0nmcdq" path="res://Code/Player/player.gd" id="1_qmyvb"]
 [ext_resource type="Texture2D" uid="uid://b23abcfwex7ad" path="res://Assets/Characters/Head.png" id="2_af0ou"]
 [ext_resource type="Texture2D" uid="uid://cloqwnckf7a5f" path="res://Assets/Characters/Body.png" id="3_7ekov"]
 [ext_resource type="Texture2D" uid="uid://cbse5fvthtsd4" path="res://Assets/Characters/Right arm.png" id="4_u4j01"]
 [ext_resource type="Texture2D" uid="uid://cbjsbdoac8rfo" path="res://Assets/Characters/Left arm.png" id="5_vjjn5"]
 [ext_resource type="Texture2D" uid="uid://dk0tihh7ir121" path="res://Assets/Characters/Right leg.png" id="6_ng1oc"]
 [ext_resource type="Texture2D" uid="uid://crgavq0nw7wib" path="res://Assets/Characters/Left leg.png" id="7_ty4t4"]
-[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="8_hutjk"]
+[ext_resource type="Script" uid="uid://miof1g74vvpf" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="8_hutjk"]
 [ext_resource type="AudioStream" uid="uid://dbgswoiscjtoq" path="res://Assets/Sounds/Jump.mp3" id="9_wsa1c"]
 [ext_resource type="AudioStream" uid="uid://bitwi431i1p1s" path="res://Assets/Sounds/DoubleJump.mp3" id="10_3orse"]
 
@@ -1720,15 +1720,15 @@ tracks/17/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_tjtbm"]
 _data = {
-"Jump": SubResource("Animation_bumd7"),
-"Jump_left": SubResource("Animation_jw6tn"),
-"Land": SubResource("Animation_ieonc"),
-"RESET": SubResource("Animation_y5bjb"),
-"Take Off": SubResource("Animation_3hpmt"),
-"idle": SubResource("Animation_xabnd"),
-"run": SubResource("Animation_0ij06"),
-"run_left": SubResource("Animation_o7jcx"),
-"walljump": SubResource("Animation_xo8q2")
+&"Jump": SubResource("Animation_bumd7"),
+&"Jump_left": SubResource("Animation_jw6tn"),
+&"Land": SubResource("Animation_ieonc"),
+&"RESET": SubResource("Animation_y5bjb"),
+&"Take Off": SubResource("Animation_3hpmt"),
+&"idle": SubResource("Animation_xabnd"),
+&"run": SubResource("Animation_0ij06"),
+&"run_left": SubResource("Animation_o7jcx"),
+&"walljump": SubResource("Animation_xo8q2")
 }
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_lcmu6"]
@@ -1820,7 +1820,7 @@ scale_max = 4.0
 scale_curve = SubResource("CurveTexture_hk35r")
 
 [sub_resource type="Curve" id="Curve_bm4l1"]
-max_value = 2.3
+_limits = [0.0, 2.3, 0.0, 1.0]
 _data = [Vector2(0, 1.92088), 0.0, 0.0, 0, 0, Vector2(1, 0.758242), 0.0, 0.0, 0, 0]
 point_count = 2
 
@@ -1868,8 +1868,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_otq0o"]
 _data = {
-"RESET": SubResource("Animation_1mum8"),
-"onDeath": SubResource("Animation_lf8af")
+&"RESET": SubResource("Animation_1mum8"),
+&"onDeath": SubResource("Animation_lf8af")
 }
 
 [node name="Player" type="CharacterBody2D"]
@@ -1935,7 +1935,7 @@ shape = SubResource("CapsuleShape2D_24y02")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_tjtbm")
+&"": SubResource("AnimationLibrary_tjtbm")
 }
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
@@ -1954,33 +1954,33 @@ modulate = Color(0.262745, 0.862745, 0.854902, 1)
 position = Vector2(0, 19)
 emitting = false
 amount = 7
-process_material = SubResource("ParticleProcessMaterial_w7n4p")
 lifetime = 0.2
 one_shot = true
 explosiveness = 0.89
+process_material = SubResource("ParticleProcessMaterial_w7n4p")
 
 [node name="DoubleJump" type="GPUParticles2D" parent="Particles"]
 modulate = Color(0.262745, 0.862745, 0.854902, 1)
 position = Vector2(0, 19)
 emitting = false
 amount = 7
-process_material = SubResource("ParticleProcessMaterial_w7n4p")
 lifetime = 0.2
 one_shot = true
 explosiveness = 0.89
+process_material = SubResource("ParticleProcessMaterial_w7n4p")
 
 [node name="Running" type="GPUParticles2D" parent="Particles"]
 modulate = Color(0.262745, 0.862745, 0.854902, 1)
 position = Vector2(0, 19)
-process_material = SubResource("ParticleProcessMaterial_kj16p")
 lifetime = 0.5
 preprocess = 10.17
 explosiveness = 0.08
 collision_base_size = 0.0
+process_material = SubResource("ParticleProcessMaterial_kj16p")
 
 [node name="death" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_otq0o")
+&"": SubResource("AnimationLibrary_otq0o")
 }
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]

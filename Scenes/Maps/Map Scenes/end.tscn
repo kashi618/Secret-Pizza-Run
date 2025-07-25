@@ -1,15 +1,15 @@
 [gd_scene load_steps=18 format=4 uid="uid://bbipgytnf0k5y"]
 
-[ext_resource type="Script" path="res://Code/Class/Map.gd" id="1_0huik"]
+[ext_resource type="Script" uid="uid://dbtekepajbrox" path="res://Code/Class/Map.gd" id="1_0huik"]
 [ext_resource type="TileSet" uid="uid://coabby1c0rdwd" path="res://Assets/Tile Map/main_tilemap.tres" id="1_lwotd"]
 [ext_resource type="Texture2D" uid="uid://d0vosft0bl4ag" path="res://Assets/Characters/Old dude/castle.png" id="2_6cxbn"]
 [ext_resource type="PackedScene" uid="uid://diknajp1nsj2y" path="res://Scenes/Player/demonGuy.tscn" id="3_0lg5t"]
 [ext_resource type="PackedScene" uid="uid://bqetxd6a5mong" path="res://Scenes/Player/player.tscn" id="5_3y76h"]
 [ext_resource type="Texture2D" uid="uid://dojfvqmc0q0f5" path="res://Assets/Characters/Old dude/e.png" id="6_s322s"]
-[ext_resource type="Script" path="res://Scenes/Maps/Map Scenes/e.gd" id="7_27mhl"]
-[ext_resource type="Script" path="res://Scenes/Maps/Map Scenes/camera_manager_end.gd" id="8_g301y"]
-[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="8_hjb0b"]
-[ext_resource type="Script" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="9_of73s"]
+[ext_resource type="Script" uid="uid://de180r2dkjw4x" path="res://Scenes/Maps/Map Scenes/e.gd" id="7_27mhl"]
+[ext_resource type="Script" uid="uid://c7trq6fyojl0f" path="res://Scenes/Maps/Map Scenes/camera_manager_end.gd" id="8_g301y"]
+[ext_resource type="Script" uid="uid://d1w1kyb2pv4sd" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="8_hjb0b"]
+[ext_resource type="Script" uid="uid://ckqgugbbuu2x6" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="9_of73s"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vkbu1"]
 size = Vector2(634, 559)

@@ -1,14 +1,14 @@
 [gd_scene load_steps=21 format=4 uid="uid://eomhqqehrl26"]
 
-[ext_resource type="Script" path="res://Code/Class/Map.gd" id="1_5vyi3"]
+[ext_resource type="Script" uid="uid://dbtekepajbrox" path="res://Code/Class/Map.gd" id="1_5vyi3"]
 [ext_resource type="TileSet" uid="uid://coabby1c0rdwd" path="res://Assets/Tile Map/main_tilemap.tres" id="2_lt8m7"]
 [ext_resource type="PackedScene" uid="uid://bkn35y4qgq7wd" path="res://Assets/Objects/moving_platform.tscn" id="3_2wcnw"]
 [ext_resource type="PackedScene" uid="uid://bqetxd6a5mong" path="res://Scenes/Player/player.tscn" id="4_g6vkg"]
 [ext_resource type="PackedScene" uid="uid://b2mvdslakp4o7" path="res://Scenes/Maps/Map features/death_zone.tscn" id="5_wyliu"]
 [ext_resource type="PackedScene" uid="uid://601y8dxpqxp8" path="res://Assets/Objects/flag_end.tscn" id="7_33dhw"]
-[ext_resource type="Script" path="res://Scenes/Maps/Map Scenes/camera_manager_move_map.gd" id="7_cv0u1"]
-[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="8_d76hd"]
-[ext_resource type="Script" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="9_w2l4w"]
+[ext_resource type="Script" uid="uid://rgmbqax4yxuc" path="res://Scenes/Maps/Map Scenes/camera_manager_move_map.gd" id="7_cv0u1"]
+[ext_resource type="Script" uid="uid://d1w1kyb2pv4sd" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="8_d76hd"]
+[ext_resource type="Script" uid="uid://ckqgugbbuu2x6" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="9_w2l4w"]
 [ext_resource type="PackedScene" uid="uid://s0x58caacs63" path="res://Assets/Objects/powerups/spring_unlock.tscn" id="10_52eoi"]
 [ext_resource type="PackedScene" uid="uid://bcu50ypb7dm01" path="res://Assets/Objects/powerups/spring_powerup.tscn" id="11_4b6dt"]
 

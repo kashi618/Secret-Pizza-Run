@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://b15loplvf06c6"]
 
 [ext_resource type="Texture2D" uid="uid://dvsu855fxwt1g" path="res://Assets/Characters/Old dude/Old dude-Sheet.png" id="1_0qyrq"]
-[ext_resource type="Script" path="res://Scenes/Player/old_guy.gd" id="1_vvw53"]
+[ext_resource type="Script" uid="uid://bwii517oowas7" path="res://Scenes/Player/old_guy.gd" id="1_vvw53"]
 
 [sub_resource type="Animation" id="Animation_c78pc"]
 length = 0.001
@@ -38,8 +38,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_to114"]
 _data = {
-"RESET": SubResource("Animation_c78pc"),
-"idle": SubResource("Animation_o14sg")
+&"RESET": SubResource("Animation_c78pc"),
+&"idle": SubResource("Animation_o14sg")
 }
 
 [node name="OldGuy" type="CharacterBody2D"]

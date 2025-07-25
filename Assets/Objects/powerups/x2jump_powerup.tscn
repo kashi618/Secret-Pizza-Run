@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://db68aarmgy0ff"]
 
-[ext_resource type="Script" path="res://Assets/Objects/powerups/x_2_jump_powerup.gd" id="1_cnpt6"]
+[ext_resource type="Script" uid="uid://cc0wne2l3ylgj" path="res://Assets/Objects/powerups/x_2_jump_powerup.gd" id="1_cnpt6"]
 [ext_resource type="Texture2D" uid="uid://deutya4q4fcop" path="res://Assets/Objects/powerups/images/x2 jump powerup.png" id="2_t3xix"]
 [ext_resource type="Material" uid="uid://dc0dd87b0ilgj" path="res://Assets/Objects/powerups/powerupParticle.tres" id="3_5adii"]
 [ext_resource type="Texture2D" uid="uid://nieyv15hhkma" path="res://Assets/Objects/powerups/images/crosshair121.png" id="4_3s6jy"]
@@ -38,8 +38,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_duhuv"]
 _data = {
-"RESET": SubResource("Animation_udlu1"),
-"idle": SubResource("Animation_u6ux0")
+&"RESET": SubResource("Animation_udlu1"),
+&"idle": SubResource("Animation_u6ux0")
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4485w"]

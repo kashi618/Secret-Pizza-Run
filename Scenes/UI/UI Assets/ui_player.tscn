@@ -1,6 +1,6 @@
 [gd_scene load_steps=17 format=3 uid="uid://52o241i0fvl5"]
 
-[ext_resource type="Script" path="res://Scenes/UI/UI Assets/ui_player.gd" id="1_stl8c"]
+[ext_resource type="Script" uid="uid://b6aekvo4ceuld" path="res://Scenes/UI/UI Assets/ui_player.gd" id="1_stl8c"]
 [ext_resource type="Texture2D" uid="uid://b23abcfwex7ad" path="res://Assets/Characters/Head.png" id="2_vl611"]
 [ext_resource type="Texture2D" uid="uid://cloqwnckf7a5f" path="res://Assets/Characters/Body.png" id="3_kii8h"]
 [ext_resource type="Texture2D" uid="uid://cbse5fvthtsd4" path="res://Assets/Characters/Right arm.png" id="4_tjrap"]
@@ -1539,14 +1539,14 @@ tracks/17/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_tjtbm"]
 _data = {
-"Jump": SubResource("Animation_bumd7"),
-"Land": SubResource("Animation_ieonc"),
-"RESET": SubResource("Animation_y5bjb"),
-"Take Off": SubResource("Animation_3hpmt"),
-"idle": SubResource("Animation_xabnd"),
-"run": SubResource("Animation_0ij06"),
-"run_left": SubResource("Animation_o7jcx"),
-"walljump": SubResource("Animation_xo8q2")
+&"Jump": SubResource("Animation_bumd7"),
+&"Land": SubResource("Animation_ieonc"),
+&"RESET": SubResource("Animation_y5bjb"),
+&"Take Off": SubResource("Animation_3hpmt"),
+&"idle": SubResource("Animation_xabnd"),
+&"run": SubResource("Animation_0ij06"),
+&"run_left": SubResource("Animation_o7jcx"),
+&"walljump": SubResource("Animation_xo8q2")
 }
 
 [node name="UI Player" type="Node2D"]

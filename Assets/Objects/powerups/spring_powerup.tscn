@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://bcu50ypb7dm01"]
 
-[ext_resource type="Script" path="res://Assets/Objects/powerups/spring_powerup.gd" id="1_mblkn"]
+[ext_resource type="Script" uid="uid://bvh86ow8damb6" path="res://Assets/Objects/powerups/spring_powerup.gd" id="1_mblkn"]
 [ext_resource type="Texture2D" uid="uid://dcc8y02vc5ygj" path="res://Assets/Objects/powerups/images/spring powerup.png" id="2_c2cnr"]
 [ext_resource type="Material" uid="uid://cg8kofh5mk0ku" path="res://Assets/Objects/powerups/EndParticles.tres" id="3_hcdmm"]
 [ext_resource type="Texture2D" uid="uid://nieyv15hhkma" path="res://Assets/Objects/powerups/images/crosshair121.png" id="4_oeg68"]
@@ -38,8 +38,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_duhuv"]
 _data = {
-"RESET": SubResource("Animation_udlu1"),
-"idle": SubResource("Animation_u6ux0")
+&"RESET": SubResource("Animation_udlu1"),
+&"idle": SubResource("Animation_u6ux0")
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4485w"]

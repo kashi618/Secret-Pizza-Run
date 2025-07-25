@@ -1,0 +1,56 @@
+[gd_scene load_steps=7 format=3 uid="uid://deb6fdv1nhyaj"]
+
+[ext_resource type="Texture2D" uid="uid://c22euj2vtuaw5" path="res://Scenes/UI/Mobile Controls/left.png" id="1_x06ef"]
+[ext_resource type="Texture2D" uid="uid://b1rg80sya7t6e" path="res://Scenes/UI/Mobile Controls/right.png" id="2_ulph1"]
+[ext_resource type="Texture2D" uid="uid://dhqwl6sbhp1bj" path="res://Scenes/UI/Mobile Controls/transparentDark24.png" id="2_x2g6u"]
+[ext_resource type="Texture2D" uid="uid://cq8odnwgl0mrw" path="res://Scenes/UI/Mobile Controls/jump.png" id="3_m6wln"]
+[ext_resource type="Texture2D" uid="uid://bacihp3xemqk5" path="res://Scenes/UI/Mobile Controls/transparentDark22.png" id="4_2b1fv"]
+[ext_resource type="Texture2D" uid="uid://drgqftfrae7tt" path="res://Scenes/UI/Mobile Controls/transparentDark23.png" id="6_kod3f"]
+
+[node name="TouchControls" type="CanvasLayer"]
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -263.0
+offset_top = -240.0
+offset_right = -223.0
+offset_bottom = -200.0
+grow_horizontal = 0
+grow_vertical = 0
+size_flags_horizontal = 4
+metadata/_edit_use_anchors_ = true
+
+[node name="Jump" type="TouchScreenButton" parent="MarginContainer"]
+scale = Vector2(2, 2)
+texture_normal = ExtResource("3_m6wln")
+texture_pressed = ExtResource("2_x2g6u")
+action = "jump"
+
+[node name="MarginContainer2" type="MarginContainer" parent="."]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 126.0
+offset_top = -240.0
+offset_right = 166.0
+offset_bottom = -200.0
+grow_vertical = 0
+size_flags_horizontal = 4
+
+[node name="Left" type="TouchScreenButton" parent="MarginContainer2"]
+position = Vector2(-5, -11)
+scale = Vector2(2, 2)
+texture_normal = ExtResource("1_x06ef")
+texture_pressed = ExtResource("4_2b1fv")
+action = "left"
+
+[node name="Right" type="TouchScreenButton" parent="MarginContainer2"]
+position = Vector2(266, -11)
+scale = Vector2(2, 2)
+texture_normal = ExtResource("2_ulph1")
+texture_pressed = ExtResource("6_kod3f")
+action = "right"

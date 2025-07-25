@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bp6gdqov8hl5u"]
 
-[ext_resource type="Script" path="res://Scenes/Maps/Spawner.gd" id="1_wf03i"]
+[ext_resource type="Script" uid="uid://1td4qfv1e51k" path="res://Scenes/Maps/Spawner.gd" id="1_wf03i"]
 
 [node name="Respawn_shape" type="Area2D"]
 position = Vector2(157, -19)

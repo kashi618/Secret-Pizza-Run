@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://co1qjv07ngs6j"]
 
 [ext_resource type="Theme" uid="uid://cjjnne5ktjnxi" path="res://Scenes/UI/UI Assets/UI.tres" id="1_0hhkk"]
-[ext_resource type="Script" path="res://Scenes/UI/you_lose.gd" id="1_3y7f5"]
+[ext_resource type="Script" uid="uid://dj5a1eic22qt8" path="res://Scenes/UI/you_lose.gd" id="1_3y7f5"]
 [ext_resource type="Texture2D" uid="uid://5g0snkwtyj7p" path="res://Assets/Characters/pizza/pizza2.png" id="2_7r3s4"]
 [ext_resource type="AudioStream" uid="uid://cu7nc8dalfcdq" path="res://Assets/Sounds/You_Lose.mp3" id="4_xdfi2"]
 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://s0x58caacs63"]
 
-[ext_resource type="Script" path="res://Assets/Objects/powerups/spring_unlock.gd" id="1_7up3j"]
+[ext_resource type="Script" uid="uid://rmxudiuiqswt" path="res://Assets/Objects/powerups/spring_unlock.gd" id="1_7up3j"]
 [ext_resource type="Theme" uid="uid://cjjnne5ktjnxi" path="res://Scenes/UI/UI Assets/UI.tres" id="2_lqm5x"]
 [ext_resource type="Texture2D" uid="uid://b7vfjx52i7qaa" path="res://Assets/Objects/powerups/images/spring powerupBig.png" id="3_5aril"]
 [ext_resource type="Material" uid="uid://6xew18640bs1" path="res://Assets/Objects/powerups/explosion.tres" id="4_wu0gu"]
@@ -87,8 +87,8 @@ tracks/2/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_f2wcm"]
 _data = {
-"RESET": SubResource("Animation_p35io"),
-"reveal": SubResource("Animation_r884s")
+&"RESET": SubResource("Animation_p35io"),
+&"reveal": SubResource("Animation_r884s")
 }
 
 [node name="PowerupUnlock" type="Control"]

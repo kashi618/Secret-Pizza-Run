@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=4 uid="uid://b1wnlq0j37fkp"]
 
-[ext_resource type="Script" path="res://Code/Class/Map.gd" id="1_7mbqq"]
+[ext_resource type="Script" uid="uid://dbtekepajbrox" path="res://Code/Class/Map.gd" id="1_7mbqq"]
 [ext_resource type="TileSet" uid="uid://coabby1c0rdwd" path="res://Assets/Tile Map/main_tilemap.tres" id="2_k2iui"]
 [ext_resource type="PackedScene" uid="uid://bqetxd6a5mong" path="res://Scenes/Player/player.tscn" id="3_03ua0"]
 [ext_resource type="PackedScene" uid="uid://b2mvdslakp4o7" path="res://Scenes/Maps/Map features/death_zone.tscn" id="4_r6spi"]

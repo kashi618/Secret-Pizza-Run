@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://doxfls6lhcxok"]
 
-[ext_resource type="Script" path="res://Code/UI/ui.gd" id="1_y13xg"]
+[ext_resource type="Script" uid="uid://5elb6pjsndtu" path="res://Code/UI/ui.gd" id="1_y13xg"]
 [ext_resource type="PackedScene" uid="uid://c6x7xm84jeo6t" path="res://Scenes/UI/stopwatch.tscn" id="2_sxo4n"]
 [ext_resource type="Theme" uid="uid://cjjnne5ktjnxi" path="res://Scenes/UI/UI Assets/UI.tres" id="3_svmd5"]
 [ext_resource type="AudioStream" uid="uid://cvgs55cjf4qla" path="res://Assets/Sounds/BGM 1 minute.mp3" id="4_gu4yb"]
@@ -44,8 +44,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_gy5om"]
 _data = {
-"RESET": SubResource("Animation_4p6k5"),
-"sceneTransition": SubResource("Animation_o7qih")
+&"RESET": SubResource("Animation_4p6k5"),
+&"sceneTransition": SubResource("Animation_o7qih")
 }
 
 [node name="UI" type="Control" node_paths=PackedStringArray("stopwatch_label")]
@@ -90,7 +90,7 @@ color = Color(0.0862745, 0.117647, 0.172549, 1)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_gy5om")
+&"": SubResource("AnimationLibrary_gy5om")
 }
 
 [node name="1 minute song" type="AudioStreamPlayer2D" parent="."]
