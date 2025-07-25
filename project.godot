@@ -71,8 +71,8 @@ text/autopauses={}
 
 [display]
 
-window/size/viewport_width=1910
-window/size/viewport_height=1080
+window/size/viewport_width=1400
+window/size/viewport_height=900
 window/stretch/mode="viewport"
 
 [editor_plugins]
@@ -138,4 +138,5 @@ tips/show_jitter_tips=false
 textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true
 environment/defaults/default_clear_color=Color(0.0862745, 0.117647, 0.172549, 1)

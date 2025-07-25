@@ -7,7 +7,7 @@ signal time_collected
 signal power_up_collected
 signal power_up_collected_finish
 signal switch_scene
-
+signal mobileControls
 
 func is_camera_unloaded():
 	pass

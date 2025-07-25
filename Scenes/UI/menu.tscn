@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://by0rja68g8x28"]
+[gd_scene load_steps=5 format=3 uid="uid://by0rja68g8x28"]
 
 [ext_resource type="Script" uid="uid://qhmys0yj5g0s" path="res://Scenes/UI/menu.gd" id="1_cfc05"]
 [ext_resource type="Theme" uid="uid://cjjnne5ktjnxi" path="res://Scenes/UI/UI Assets/UI.tres" id="2_wvds5"]
+[ext_resource type="Script" uid="uid://dxdd1vxgqekdf" path="res://Scenes/UI/check_button.gd" id="3_t1b1y"]
 [ext_resource type="PackedScene" uid="uid://52o241i0fvl5" path="res://Scenes/UI/UI Assets/ui_player.tscn" id="3_wi2ff"]
 
 [node name="Menu" type="Control"]
@@ -65,6 +66,25 @@ theme_override_font_sizes/font_size = 208
 text = "SECRET   
 DELIVERY RUN!"
 
+[node name="MarginContainer3" type="MarginContainer" parent="CanvasLayer"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -272.0
+offset_top = -123.0
+offset_right = -228.0
+offset_bottom = -83.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="CheckButton" type="CheckButton" parent="CanvasLayer/MarginContainer3"]
+layout_mode = 2
+theme = ExtResource("2_wvds5")
+text = "Mobile Controls?"
+script = ExtResource("3_t1b1y")
+
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
 anchors_preset = 6
@@ -84,3 +104,4 @@ scale = Vector2(-10, 10)
 
 [connection signal="pressed" from="CanvasLayer/MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="CanvasLayer/MarginContainer/VBoxContainer/Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="CanvasLayer/MarginContainer3/CheckButton" to="." method="_on_check_button_pressed"]

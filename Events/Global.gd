@@ -38,6 +38,7 @@ var timer_start = false
 
 var timer_powerup_amt_collected = 0
 
+var mobileControlsVisible = false
 
 
 func _on_time_collected():
