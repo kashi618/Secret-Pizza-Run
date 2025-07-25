@@ -1,5 +1,7 @@
 extends CanvasLayer
 
+signal mobilePause
+
 #@onready var mobileButtons = %TouchControls
 #
 #func _ready():
@@ -15,3 +17,7 @@ extends CanvasLayer
 			#mobileButtons.hide()
 		#false:
 			#mobileButtons.show()
+
+
+func _on_touch_screen_button_pressed():
+	mobilePause.emit()

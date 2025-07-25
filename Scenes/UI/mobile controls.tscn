@@ -1,13 +1,21 @@
-[gd_scene load_steps=7 format=3 uid="uid://deb6fdv1nhyaj"]
+[gd_scene load_steps=14 format=3 uid="uid://deb6fdv1nhyaj"]
 
+[ext_resource type="Script" uid="uid://dd5bvm5a256h" path="res://Scenes/UI/mobile_controls.gd" id="1_6d3ub"]
 [ext_resource type="Texture2D" uid="uid://c22euj2vtuaw5" path="res://Scenes/UI/Mobile Controls/left.png" id="1_x06ef"]
 [ext_resource type="Texture2D" uid="uid://b1rg80sya7t6e" path="res://Scenes/UI/Mobile Controls/right.png" id="2_ulph1"]
 [ext_resource type="Texture2D" uid="uid://dhqwl6sbhp1bj" path="res://Scenes/UI/Mobile Controls/transparentDark24.png" id="2_x2g6u"]
+[ext_resource type="Texture2D" uid="uid://cg0ge330irx2g" path="res://Scenes/UI/Mobile Controls/flatDark26.png" id="3_k60ug"]
 [ext_resource type="Texture2D" uid="uid://cq8odnwgl0mrw" path="res://Scenes/UI/Mobile Controls/jump.png" id="3_m6wln"]
 [ext_resource type="Texture2D" uid="uid://bacihp3xemqk5" path="res://Scenes/UI/Mobile Controls/transparentDark22.png" id="4_2b1fv"]
+[ext_resource type="Texture2D" uid="uid://bgm7vvgbg42y4" path="res://Scenes/UI/Mobile Controls/transparentDark25.png" id="4_6d3ub"]
+[ext_resource type="Texture2D" uid="uid://dr6e65p8dhjtd" path="res://Scenes/UI/Mobile Controls/flatDark47.png" id="6_d0smh"]
 [ext_resource type="Texture2D" uid="uid://drgqftfrae7tt" path="res://Scenes/UI/Mobile Controls/transparentDark23.png" id="6_kod3f"]
+[ext_resource type="Texture2D" uid="uid://0sp4ncqwfabt" path="res://Scenes/UI/Mobile Controls/transparentDark46.png" id="7_yn8jq"]
+[ext_resource type="Texture2D" uid="uid://cget8u6itwwdk" path="res://Scenes/UI/Mobile Controls/flatDark13.png" id="9_qfxkm"]
+[ext_resource type="Texture2D" uid="uid://bhupd26302v5g" path="res://Scenes/UI/Mobile Controls/transparentDark12.png" id="10_d0smh"]
 
 [node name="TouchControls" type="CanvasLayer"]
+script = ExtResource("1_6d3ub")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 anchors_preset = 3
@@ -16,41 +24,72 @@ anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = -263.0
-offset_top = -240.0
+offset_top = -280.0
 offset_right = -223.0
-offset_bottom = -200.0
+offset_bottom = -240.0
 grow_horizontal = 0
 grow_vertical = 0
 size_flags_horizontal = 4
 metadata/_edit_use_anchors_ = true
 
 [node name="Jump" type="TouchScreenButton" parent="MarginContainer"]
-scale = Vector2(2, 2)
+position = Vector2(0, -11)
+scale = Vector2(2.5, 2.5)
 texture_normal = ExtResource("3_m6wln")
 texture_pressed = ExtResource("2_x2g6u")
 action = "jump"
+
+[node name="Down" type="TouchScreenButton" parent="MarginContainer"]
+position = Vector2(-220, 40)
+scale = Vector2(2, 2)
+texture_normal = ExtResource("3_k60ug")
+texture_pressed = ExtResource("4_6d3ub")
+action = "down"
+
+[node name="Down2" type="TouchScreenButton" parent="MarginContainer"]
+position = Vector2(-457, 40)
+scale = Vector2(2, 2)
+texture_normal = ExtResource("6_d0smh")
+texture_pressed = ExtResource("7_yn8jq")
+action = "e"
 
 [node name="MarginContainer2" type="MarginContainer" parent="."]
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
-offset_left = 126.0
-offset_top = -240.0
-offset_right = 166.0
-offset_bottom = -200.0
+offset_left = 143.0
+offset_top = -280.0
+offset_right = 183.0
+offset_bottom = -240.0
 grow_vertical = 0
 size_flags_horizontal = 4
 
 [node name="Left" type="TouchScreenButton" parent="MarginContainer2"]
 position = Vector2(-5, -11)
-scale = Vector2(2, 2)
+scale = Vector2(2.5, 2.5)
 texture_normal = ExtResource("1_x06ef")
 texture_pressed = ExtResource("4_2b1fv")
 action = "left"
 
 [node name="Right" type="TouchScreenButton" parent="MarginContainer2"]
-position = Vector2(266, -11)
-scale = Vector2(2, 2)
+position = Vector2(295, -11)
+scale = Vector2(2.5, 2.5)
 texture_normal = ExtResource("2_ulph1")
 texture_pressed = ExtResource("6_kod3f")
 action = "right"
+
+[node name="MarginContainer3" type="MarginContainer" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="MarginContainer3"]
+position = Vector2(-120, 46)
+scale = Vector2(2, 2)
+texture_normal = ExtResource("9_qfxkm")
+texture_pressed = ExtResource("10_d0smh")
+
+[connection signal="pressed" from="MarginContainer3/TouchScreenButton" to="." method="_on_touch_screen_button_pressed"]

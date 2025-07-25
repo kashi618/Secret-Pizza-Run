@@ -52,3 +52,7 @@ func _on_dialogic(arg):
 		can_pause =  true  
 	else:
 		can_pause = true
+
+
+func _on_touch_controls_mobile_pause():
+	self.visible = true

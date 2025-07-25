@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://dibc818ncc4g3"]
+[gd_scene load_steps=17 format=3 uid="uid://dibc818ncc4g3"]
 
 [ext_resource type="PackedScene" uid="uid://doxfls6lhcxok" path="res://Scenes/UI/ui.tscn" id="1_jkguw"]
 [ext_resource type="Script" uid="uid://beo5d2jqxpb17" path="res://Scenes/main.gd" id="1_ynf03"]
@@ -15,7 +15,6 @@
 [ext_resource type="PackedScene" uid="uid://c8blcq3ojv7un" path="res://Scenes/UI/pause_menu.tscn" id="11_t6rhh"]
 [ext_resource type="PackedScene" uid="uid://co1qjv07ngs6j" path="res://Scenes/UI/you_lose.tscn" id="12_5gtk2"]
 [ext_resource type="Resource" uid="uid://bay4cgmjbd0s5" path="res://Scenes/Maps/Map resources/10_end.tres" id="12_mllqj"]
-[ext_resource type="Script" uid="uid://dd5bvm5a256h" path="res://Scenes/UI/mobile_controls.gd" id="14_h1bgf"]
 [ext_resource type="PackedScene" uid="uid://deb6fdv1nhyaj" path="res://Scenes/UI/mobile controls.tscn" id="14_k12tt"]
 
 [node name="Main" type="Node"]
@@ -28,7 +27,6 @@ Maps = Array[ExtResource("2_u3f0a")]([ExtResource("3_ixmbw"), ExtResource("4_joh
 
 [node name="TouchControls" parent="Menus_UI" instance=ExtResource("14_k12tt")]
 unique_name_in_owner = true
-script = ExtResource("14_h1bgf")
 
 [node name="UI" parent="Menus_UI" instance=ExtResource("1_jkguw")]
 
@@ -37,4 +35,5 @@ script = ExtResource("14_h1bgf")
 [node name="Pause menu" parent="Menus_UI" instance=ExtResource("11_t6rhh")]
 z_index = 4
 
+[connection signal="mobilePause" from="Menus_UI/TouchControls" to="Menus_UI/Pause menu" method="_on_touch_controls_mobile_pause"]
 [connection signal="no_more_time_v2" from="Menus_UI/UI" to="Menus_UI/YouLose" method="_on_ui_no_more_time_v_2"]
